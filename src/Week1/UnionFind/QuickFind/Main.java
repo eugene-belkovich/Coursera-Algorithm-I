@@ -4,14 +4,14 @@ import java.util.Arrays;
 
 public class Main {
     public static void main(String[] args) {
-        UnionFind unionFind = new UnionFind(10);
+        QuickFind quickFind = new QuickFind(10);
 
-        System.out.println(Arrays.toString(unionFind.getGraph()));
+        System.out.println(Arrays.toString(quickFind.getGraph()));
 
-        unionFind.union(3,5);
-        System.out.println(unionFind.isConnected(3,5));
-        System.out.println(unionFind.isConnected(3,6));
+        quickFind.union(3,5);
+        System.out.println(quickFind.isConnected(3,5));
+        System.out.println(quickFind.isConnected(3,6));
 
-        System.out.println(Arrays.toString(unionFind.getGraph()));
+        System.out.println(Arrays.toString(quickFind.getGraph()));
     }
 }
